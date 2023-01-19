@@ -1,13 +1,12 @@
 {
-  "regexManagers":[
-  {
-  "fileMatch": [
-    "^.yaml$"
-  ],
-  "matchStrings": [
-    "renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[^:]+:=https.*\\/v?(?<currentValue>[\\d\\.rc\\-]*)\\/"
-  ],
-  "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
-}
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "regexManagers": [
+    {
+      "fileMatch": ["^.yaml$"],
+      "matchStrings": [
+        "renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[^:]+:=https.*\\/v?(?<currentValue>[\\d\\.rc\\-]*)\\/"
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    }
   ]
 }
