@@ -1,6 +1,6 @@
 imports:
   #renovate: datasource=docker depName=ghcr.io/metacontroller/metacontroller-helm
-  - metacontroller:=https://raw.githubusercontent.com/metacontroller/metacontroller/v4.7.3/manifests/production/metacontroller-crds-v1.yaml
+  - metacontroller:=https://raw.githubusercontent.com/metacontroller/metacontroller/v4.7.1/manifests/production/metacontroller-crds-v1.yaml
 
   #renovate: datasource=docker depName=quay.io/spotahome/redis-operator
-  - redis-operator:=https://raw.githubusercontent.com/spotahome/redis-operator/v1.2.4/manifests/databases.spotahome.com_redisfailovers.yaml
+  - redis-operator:=https://raw.githubusercontent.com/spotahome/redis-operator/v1.2.1/manifests/databases.spotahome.com_redisfailovers.yaml
